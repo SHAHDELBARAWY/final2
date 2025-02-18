@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+.row
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+.icon-star{
+    color: rgb(229, 194, 0);
+    
+}
+.icon-heart{
+    cursor: pointer;
+    
+}
+
+.card-style{
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+.card-style:hover {
+    box-shadow: 1px 1px 10px 10px rgba(0, 139, 44, 0.2);
+}
+
+.card-style .btn{
+    background-color: #4CAF50;
+    color: white;
+    opacity: 0; 
+    margin: 3px;
+    transition: all .5s, opacity 0.5s;
+    transform: translateY(200px);
+    position: relative;
+    z-index: 10;
+
+}
+
+.card-style:hover .btn{
+    transform: translateY(-2px); 
+    opacity: 1 !important;
+
+}
