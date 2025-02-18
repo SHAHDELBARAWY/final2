@@ -1,4 +1,5 @@
 import axios from 'axios';
+import styles from './Register.module.css'
 import { useFormik } from 'formik';
 import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -180,8 +181,8 @@ export default function Register(){
             ))
             ):null}
 
-            <button type="submit" className="btn btn-primary">
-                {isLoading?<i className='fas fa-spinner fa-spin'></i>: 'Register now'}
+              <button type="submit" className={`btn btn-primary d-flex align-items-center btn-outline-secondary  ${styles.custombutton}`}>
+               {isLoading?<i className='fas fa-spinner fa-spin'></i>: 'Register now'}
             </button>
           </form>
         </div>
