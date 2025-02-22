@@ -40,8 +40,9 @@ let router = createHashRouter([
           { path: 'wishlist', element: <ProtectedRoute><Wishlist /></ProtectedRoute> },
           { path: 'products', element: <ProtectedRoute><Products /></ProtectedRoute> },
           { path: 'categories', element: <ProtectedRoute><Categories /></ProtectedRoute> },
+          { path: 'categories', element: <ProtectedRoute><Categories /></ProtectedRoute> },
           { path: 'brands', element: <ProtectedRoute><Brands /></ProtectedRoute> },
-          { path: 'productdetails/:id', element: <ProtectedRoute><ProductDetailes /></ProtectedRoute> },
+          { path: 'productDetails/:id', element: <ProtectedRoute><ProductDetailes /></ProtectedRoute> },
           { path: 'login', element: <Login /> },
           { path: 'register', element: <Register /> },
           { path: '*', element: <Notfound /> } 

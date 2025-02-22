@@ -33,18 +33,18 @@ export default function RecentProduct (){
     },[])
 
     return<>
-    <div className='row  '>
+    <div className='row  ' >
         {recentProduct.map((product)=>
         {
 
 
-            const isFavourite = isInWhishlistContext(product.id);
+            const isFavourite = isInWhishlistContext(product.id); 
             return(
                 <>
                     
                 <div className='col-3  px-4 ' >
-                <div className='card-style m-0 py-4'>
-                  <Link className='text-decoration-none' to={`/productdetailes/${product.id}`}>
+                <div className='card-style m-0 py-4' >
+                  <Link className='text-decoration-none'  to={`/productDetails/${product.id}`}   >
                   <img className='w-100 ' src={product.imageCover} alt={product.title} />
                   <span className=' text-success  text-decoration-none '>{product.category.name}</span>
                   <h6 className='my-3 text-black '>{product.title.split(' ').slice(0,2).join(' ')}</h6>

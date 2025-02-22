@@ -1,5 +1,6 @@
 import axios from "axios";
 import { createContext, useEffect, useState } from "react";
+import RecentProduct from "../Components/RecentProduct/RecentProduct";
 
 export const WhishlistContext = createContext();
 
@@ -67,7 +68,13 @@ export default function WhishlistContextProvider({ children }) {
     
     return (
         <WhishlistContext.Provider value={{ WhishlistItems, addToWhishlistContext, removeFromWhishlistContext, isInWhishlistContext }}>
+            
             {children}
         </WhishlistContext.Provider>
+
+        
+
+
+
     );
 }

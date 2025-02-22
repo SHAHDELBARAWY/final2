@@ -36,8 +36,8 @@ export default function CategoriesSlider(){
 
     <div>
     <Slider {...settings} className=" mt-5">
-        {categories.map((category)=> 
-        <div >
+        {categories.map((category)=>  
+        <div key={category}>
             <img height={200} className=" w-100 object-fit-cover " src={category.image} alt={category.name} />
             <h3 >{category.name}</h3>
         </div>)}

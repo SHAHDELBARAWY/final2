@@ -56,8 +56,8 @@ export default function ProductDetailes(){
                 <span>{productdetailes?.price} EGP</span>
                 <span>{productdetailes?.ratingsAverage} <i className='fas fa-star icon-star'></i></span>
                 <div className='flex d-flex justify-content-between'>
-                <button className=' px-4 py-2 w-100 rounded text-white bg-success'> add to cart</button>
-                <i className='fas fa-heart '></i>
+                <button className=' px-4 py-2 w-75 rounded text-white  border-0 bg-success'> add to cart</button>
+                <i className='fas fa-heart icon-heart'></i>
 
                 </div>
 
